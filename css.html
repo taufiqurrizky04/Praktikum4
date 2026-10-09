@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>MODUL 4 CSS</title>
+    <!-- CSS DIGABUNG DI DALAM TAG STYLE -->
+    <style>
+        body {
+            background-color: antiqueWhite;
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        /* Font PROPERTIES */
+        h2 {
+            text-align: left;
+            color: aqua;
+        }
+        /* selector class */
+        .text-kustom {
+            font-family: arial;
+            font-size: medium;
+            font-style: italic;
+            font-weight: bold;
+            text-align: justify;
+            color: beige;
+        }
+        /* list properties */
+        ul.listsatu {
+            background-color: aliceBlue;
+            margin: 20px 5px 10px;
+            list -style-type: lower-alpha ;
+            list-style-position: inside;
+            padding: 10px;
+        }
+        ol.listdua {
+            background-color: aliceBlue;
+            list-style-type: lower-roman;
+            list-style-position: inside;
+            padding: 10px 5px 15px 20px;
+        }
+        /*styling element div*/
+        section1 {
+            background-color: aliceBlue;
+            padding: 10px 20px 15px 20px;
+            margin-top: 20px ;
+            border: 2px solid ;       
+        }
+        .mark {
+            background-color: aqua;
+            color: black;
+            font-style: italic;
+            font-weight: bold;
+            color: black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--CONTOH INLINE STYLE-->
+    <h1 style="text-align: center; color: aqua;" ; text-decoration: underline;">MODUL 4 CSS</h1>
+    <hr>
+
+    <!--IMPLEMENTASI FONT PROPERTIES-->
+    <h2>Contoh Font Properties</h2>
+    <p class="text-kustom">Ini adalah contoh paragraf dengan styling kustom.</p>
+
+    <!--IMPLEMENTASI LIST PROPERTIES-->
+    <h2>Contoh List Properties</h2>
+    <ul class="listsatu">
+        <li>sofa</li>
+        <li>meja</li>
+        <li>lampu baca</li>
+    </ul>
+
+    <p>daftar ordered list:</p>
+    <ol class="listdua">
+        <li>ranking 1</li>
+        <li>ranking 2</li>
+        <li>ranking 3</li>
+    </ol>
+
+    <!--IMPLEMENTASI STYLING ELEMENT DIV-->
+    <div class="section1">
+        <h2>Contoh Styling Element Div</h2>
+        <p>
+            Ini adalah contoh paragraf dengan styling kustom menggunakan elemen div.
+        </p>
+    </div>              
+</body>
+</html>

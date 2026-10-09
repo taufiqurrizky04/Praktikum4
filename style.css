@@ -1,0 +1,409 @@
+/* GAYA UMUM */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 82px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background-color: #f4f7fb;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HALAMAN LOGIN*/
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e8eef6, #d8e4f2);
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 24px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(20, 39, 66, 0.15);
+}
+
+.login-card h1 {
+    margin: 0;
+    color: #142b45;
+    font-size: 26px;
+}
+
+.login-subtitle {
+    margin: 4px 0 24px;
+    color: #6b7788;
+    font-size: 13px;
+}
+
+.login-card label {
+    display: block;
+    margin: 14px 0 6px;
+    color: #26374b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Warna input berubah ketika input dipilih */
+.login-card input:focus {
+    background-color: #e0f2fe;
+    border-color: #1683c5;
+    box-shadow: 0 0 0 3px rgba(22, 131, 197, 0.15);
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1769aa;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*  NAVBAR*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: 70px;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between; 
+    background-color: #142b45;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 8px 0;
+    color: #e7edf5;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Supaya konten tidak tertutup navbar fixed */
+.store-page main {
+    padding-top: 70px;
+}
+
+/* HOME*/
+.hero {
+    min-height: 390px;
+    margin: 28px auto 0;
+    width: min(92%, 1200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 14px;
+    color: #ffffff;
+    text-align: center;
+    background-image:
+        linear-gradient(rgba(7, 20, 37, 0.72), rgba(7, 20, 37, 0.78)),
+        url("halamanUtama.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-overlay {
+    max-width: 760px;
+    padding: 40px 24px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    color: #1683c5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+    color: #7dd3fc;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 46px);
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+    font-size: 1.18em; 
+}
+
+.hero-description {
+    max-width: 580px;
+    margin: 18px auto 24px;
+    color: #e2e8f0;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 6px;
+    background-color: #1683c5;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #0b5f91;
+}
+
+/* SECTION WRAP */
+.section-wrap {
+    width: min(88%, 1120px);
+    margin: 0 auto;
+}
+
+.products {
+    padding-top: 64px;
+    padding-bottom: 60px;
+}
+
+.section-heading {
+    margin-bottom: 24px;
+}
+
+.section-heading h2,
+.about h2 {
+    margin: 0;
+    color: #142b45;
+    font-size: 30px;
+}
+
+.section-heading > p:last-child {
+    margin-top: 6px;
+    color: #64748b;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 18px rgba(20, 39, 66, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(20, 39, 66, 0.14);
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+    height: 190px; 
+    object-fit: cover; 
+    background-color: #e2e8f0;
+}
+
+.product-info {
+    padding: 16px;
+}
+
+.product-info h3 {
+    margin: 0 0 6px;
+    color: #142b45;
+    font-size: 17px;
+}
+
+.product-info p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/*FOOTER */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 36px;
+    align-items: center;
+    padding: 34px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    background-color: #e6edf5;
+}
+
+.about > p {
+    margin: 0;
+    color: #475569;
+}
+
+.site-footer {
+    padding: 20px;
+    background-color: #142b45;
+    color: #dbe5f0;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* LAYAR 768px*/
+@media screen and (max-width: 767px) {
+    .navbar {
+        min-height: 64px;
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .store-page main {
+        padding-top: 64px;
+    }
+
+    .hero {
+        min-height: 300px;
+        margin-top: 18px;
+    }
+
+    .hero-overlay {
+        padding: 28px 18px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .section-wrap {
+        width: 90%;
+    }
+
+    .products {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .product-card img {
+        height: 150px;
+    }
+
+    .product-info {
+        padding: 12px;
+    }
+
+    .product-info h3 {
+        font-size: 15px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 24px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .product-card img {
+        height: 125px;
+    }
+}
